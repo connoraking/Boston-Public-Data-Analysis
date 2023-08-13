@@ -1,5 +1,5 @@
 # Boston Public Data Analysis
-Analyzing and creating data visualizations on public Boston Data from [boston.data.gov](boston.data.gov)
+Analyzing and creating data visualizations on public Boston Data from [data.boston.gov](data.boston.gov)
 
 ## Table of Contents
 
