@@ -16,12 +16,12 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 
 ## Fire Incidents
 
-![](./Department_Earnings/incident_years.png)<!-- -->
+![](./Fire_incidents/incident_years.png)<!-- -->
 
-![](./Department_Earnings/incident_hours.png)<!-- -->
+![](./Fire_incidents/incident_hours.png)<!-- -->
 
-![](./Department_Earnings/incident_months.png)<!-- -->
+![](./Fire_incidents/incident_months.png)<!-- -->
 
-![](./Department_Earnings/incident_choro.png)<!-- -->
+![](./Fire_incidents/incident_choro.png)<!-- -->
 
-![](./Department_Earnings/incident_word_cloud.png)<!-- -->
+![](./Fire_incidents/incident_word_cloud.png)<!-- -->
