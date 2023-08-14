@@ -9,6 +9,6 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 
 Using datasets from [earning reports](https://data.boston.gov/dataset/employee-earnings-report)
  
-![](./plots/stacked_2022_earnings.png)<!-- -->
+![](./Department_Earnings/stacked_2022_earnings.png)<!-- -->
 
-![](./plots/line_plot.png)<!-- -->
+![](./Department_Earnings/line_plot.png)<!-- -->
