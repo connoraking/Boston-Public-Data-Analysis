@@ -16,6 +16,8 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 
 ## Fire Incidents
 
+Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting)
+
 ![](./Fire_incidents/incident_years.png)<!-- -->
 
 ![](./Fire_incidents/incident_hours.png)<!-- -->
@@ -25,3 +27,5 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 ![](./Fire_incidents/incident_choro.png)<!-- -->
 
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
+
+![](./Fire_incidents/incident_prop_word_cloud.png)<!-- -->
