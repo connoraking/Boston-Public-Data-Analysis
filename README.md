@@ -22,6 +22,6 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 
 ![](./Fire_incidents/incident_months.png)<!-- -->
 
-<img src="./Fire_incidents/incident_choro.png" width="3200" /> <!-- Larger choro plot -->
+![](./Fire_incidents/incident_choro.png)<!-- -->
 
-<img src="./Fire_incidents/incident_word_cloud.png" width="3200" /> <!-- -->
+![](./Fire_incidents/incident_word_cloud.png)<!-- -->
