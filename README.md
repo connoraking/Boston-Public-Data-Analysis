@@ -4,7 +4,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 ## Table of Contents
 
 1. [Department Earnings](#department-earnings)
-  - [2022](#2022)
+    - [2022](#2022)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
