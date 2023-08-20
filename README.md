@@ -12,7 +12,7 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 
 ![](./Department_Earnings/stacked_2022_earnings.png)<!-- -->
 
-### Data breakdown:
+### _Data breakdown_
 
 #### Overall Earnings
 - The Boston Fire Department has the highest average gross earnings for 2022 at $157,168.68.
