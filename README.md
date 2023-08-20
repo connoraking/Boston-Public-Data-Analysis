@@ -52,6 +52,13 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 
 ![](./Department_Earnings/line_plot.png)<!-- -->
 
+### _Key Observations_
+
+- **High Grossing Departments:** The Boston Fire Department and the Boston Police Department consistently have higher average gross earnings compared to other departments. This is likely due to the nature of their roles, risks involved, and possible overtime or special duty allowances. They were seemingly on par with each other until the Fire Department saw a large increase from 2018-2019. There could be several reasons behind this spike such as contraction negotiations and retroactive pay. The City of Boston and its unions, including the fire department's union, have had a history of protracted negotiations, which sometimes led to such retroactive payouts. Specific records from the Boston Fire Department, the City of Boston's official statements, or union announcements from that time frame would lead to further definitive analysis behind the hike 
+- **Steady Growth:** Almost all departments have seen growth in their average gross earnings over the 12-year period. This could be due to annual raises, inflation adjustments, or an increased focus on specialized roles and responsibilities.
+- **Fluctuations:** Some departments like the Environment Department and Parks Department have seen fluctuations in their earnings, indicating possible changes in department size, roles, or budget allocations.
+- **Significant Growth:** The Boston Fire Department, Law Department, and Auditing Department have seen more pronounced growth in their average earnings over the years compared to others.
+
 ## Fire Incidents
 
 Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting)
