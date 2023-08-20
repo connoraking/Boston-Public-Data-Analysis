@@ -10,7 +10,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 
 ## Department Earnings
 
-Using datasets from [earning reports](https://data.boston.gov/dataset/employee-earnings-report)
+Using datasets from these [earning reports](https://data.boston.gov/dataset/employee-earnings-report)
 
 ### 2022
 
