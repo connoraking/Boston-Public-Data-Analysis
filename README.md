@@ -48,7 +48,7 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 
 ### Throughout the Years
 
-*Note: this line graph only includes departments that had continious earnings since 2011 as some departments had data on some years and none within the others*
+*Note: this line graph only includes departments that had continious earnings data since 2011 as some departments had data on some years and none within the others*
 
 ![](./Department_Earnings/line_plot.png)<!-- -->
 
