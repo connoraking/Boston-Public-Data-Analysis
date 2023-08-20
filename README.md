@@ -93,4 +93,18 @@ Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire
 
 ## Boston Public Schools
 
-![](./BPS_earnings/bps2022_bar_plot.png)<!-- --
+![](./BPS_earnings/bps2022_hist.png)<!-- -->
+
+![](./BPS_earnings/bps2022_top_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_bottom_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_bar_plot.png)<!-- -->
+
+![](./BPS_earnings/bps2022_postal_map.png)<!-- -->
+
+
+
+
+
+
