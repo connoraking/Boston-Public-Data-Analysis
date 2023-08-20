@@ -90,3 +90,7 @@ Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
 
 ![](./Fire_incidents/incident_prop_word_cloud.png)<!-- -->
+
+## Boston Public Schools
+
+![](./BPS_earnings/bps2022_bar_plot.png)<!-- --
