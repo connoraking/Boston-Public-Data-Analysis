@@ -4,11 +4,14 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 ## Table of Contents
 
 1. [Department Earnings](#department-earnings)
-2. [Fire Incidents](#fire-incidents)
+- [2022](#2022)
+3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
 
 Using datasets from [earning reports](https://data.boston.gov/dataset/employee-earnings-report)
+
+### 2022
 
 ![](./Department_Earnings/stacked_2022_earnings.png)<!-- -->
 
