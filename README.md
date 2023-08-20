@@ -5,6 +5,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 
 1. [Department Earnings](#department-earnings)
     - [2022](#2022)
+    - [Throughout the Years](#throughout-the-years)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
@@ -45,6 +46,7 @@ Using datasets from [earning reports](https://data.boston.gov/dataset/employee-e
 - The Strategy Department has the highest average other earnings at $9,394.63.
 - The Public Works Department has the least in this category at $1,782.80.
 
+### Throughout the Years
 
 ![](./Department_Earnings/line_plot.png)<!-- -->
 
