@@ -103,6 +103,13 @@ Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire
 
 ![](./BPS_earnings/bps2022_postal_map.png)<!-- -->
 
+## Boston Public Schools Teachers
+
+![](./BPS_earnings/bps2022_teach_hist.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
+
+![](./BPS_earnings/bps2022_postal_map.png)<!-- -->
 
 
 
