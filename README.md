@@ -7,7 +7,9 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [2022](#2022)
     - [Throughout the Years](#throughout-the-years)
     - [Analytical Insights](#analytical-insights)
-3. [Fire Incidents](#fire-incidents)
+2. [Fire Incidents](#fire-incidents)
+3. [Boston Public Schools](#boston-public-schools)
+4. [Boston Public Schools Teachers](#boston-public-schools-teachers) 
 
 ## Department Earnings
 
