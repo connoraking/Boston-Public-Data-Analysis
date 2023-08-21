@@ -108,8 +108,13 @@ bps2022_hist <- bps2022 %>%
   geom_vline(aes(xintercept = mean(TOTAL_GROSS)),
              color = "#E3120B", 
              linetype = "dashed",
-             size = 2) +
+             size = 1.25) +
   geom_text(aes(x = mean(TOTAL_GROSS) - 15000, y = 700, label = paste("Mean:", sprintf("%.2f", mean(TOTAL_GROSS)))), color = "#E3120B") +
+  geom_vline(aes(xintercept = median(TOTAL_GROSS)),
+             color = "#2E45B8", 
+             linetype = "dashed",
+             size = 1.25) +
+  geom_text(aes(x = median(TOTAL_GROSS) + 15000, y = 800, label = paste("Median:", sprintf("%.2f", median(TOTAL_GROSS)))), color = "#2E45B8") +
   labs(title = "Boston Public Schools Gross Earnings in 2022 Distribution",
        x = "Dollars($)",
        y = "Count",
@@ -149,7 +154,7 @@ bps2022_top_20 <- top_20_averages_long %>%
            label = round(top_20_averages$mean_gross, 2), 
            hjust = -0.45, size = 3.5, color = "black") +
   coord_flip(ylim = c(0, y_lim_max)) +
-  labs(title = "Top 20 Boston Public Schools Gross Earnings in 2022",
+  labs(title = "Top 20 Boston Public Schools Average Gross Earnings in 2022",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
@@ -191,7 +196,7 @@ bps2022_bottom_20 <- bottom_20_averages_long %>%
            label = round(bottom_20_averages$mean_gross, 2), 
            hjust = -0.45, size = 3.5, color = "black") +
   coord_flip(ylim = c(0, y_lim_max)) +
-  labs(title = "Bottom 20 Boston Public Schools Gross Earnings in 2022",
+  labs(title = "Bottom 20 Boston Public Schools Average Gross Earnings in 2022",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
@@ -317,8 +322,13 @@ bps2022_teach_hist <- teachers2022 %>%
   geom_vline(aes(xintercept = mean(TOTAL_GROSS)),
              color = "#E3120B", 
              linetype = "dashed",
-             size = 2) +
+             size = 1.25) +
   geom_text(aes(x = mean(TOTAL_GROSS) - 15000, y = 700, label = paste("Mean:", sprintf("%.2f", mean(TOTAL_GROSS)))), color = "#E3120B") +
+  geom_vline(aes(xintercept = median(TOTAL_GROSS)),
+             color = "#2E45B8", 
+             linetype = "dashed",
+             size = 1.25) +
+  geom_text(aes(x = median(TOTAL_GROSS) + 15000, y = 700, label = paste("Median:", sprintf("%.2f", median(TOTAL_GROSS)))), color = "#2E45B8") +
   labs(title = "Boston Public Schools Teacher Gross Earnings in 2022 Distribution",
        x = "Dollars($)",
        y = "Count",
@@ -393,7 +403,7 @@ bps2022_teach_top_20 <- teach_top_20_averages_long %>%
            label = round(teach_top_20_averages$mean_gross, 2), 
            hjust = -0.45, size = 3.5, color = "black") +
   coord_flip(ylim = c(0, y_lim_max)) +
-  labs(title = "Top 20 BPS Teacher Gross Earnings in 2022",
+  labs(title = "Top 20 BPS Teacher Average Gross Earnings in 2022",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
@@ -435,7 +445,7 @@ bps2022_teach_bottom_20 <- teach_bottom_20_averages_long %>%
            label = round(teach_bottom_20_averages$mean_gross, 2), 
            hjust = -0.45, size = 3.5, color = "black") +
   coord_flip(ylim = c(0, y_lim_max)) +
-  labs(title = "Bottom 20 BPS Teacher Gross Earnings in 2022",
+  labs(title = "Bottom 20 BPS Teacher Average Gross Earnings in 2022",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
@@ -452,6 +462,93 @@ bps2022_teach_bottom_20
 
 ggsave(filename = "bps2022_teach_bottom_20.png", plot = bps2022_teach_bottom_20, width = 13, height = 7, dpi = 300)
 
+#------- Box Plot by School Type------  
+
+teachers2022 <- teachers2022 %>% 
+  mutate(SCHOOL_TYPE = case_when(
+    grepl("elementary", SCHOOL, ignore.case = TRUE) ~ "Elementary",
+    grepl("K-8", SCHOOL, ignore.case = TRUE) ~ "K-8",
+    grepl("Middle", SCHOOL, ignore.case = TRUE) ~ "Middle",
+    grepl("Academy", SCHOOL, ignore.case = TRUE) ~ "Academy",
+    grepl("High|hi", SCHOOL, ignore.case = TRUE) ~ "High",
+    TRUE ~ "Other"
+  ))
+
+teachers2022$SCHOOL_TYPE <- factor(teachers2022$SCHOOL_TYPE, levels = c("Other", "Academy", "Elementary", "K-8", "Middle","High"))
+
+bps2022_teach_box <- teachers2022 %>% 
+  ggplot(aes(x = SCHOOL_TYPE, y = TOTAL_GROSS, fill = SCHOOL_TYPE)) +
+  geom_violin(width = 1) +
+  geom_boxplot(width = 0.2, color = "#F6423C") +
+  stat_summary(fun.y = mean, geom = "errorbar", aes(ymax = ..y.., ymin = ..y..), width = 0.2, linetype = "dashed", color = "#FB9851") +
+  annotate("text", x = 1, y = mean(teachers2022$TOTAL_GROSS), label = "Mean", vjust = -0.5, color = "#FB9851", size = 2.5) + # adjust x and y accordingly
+  annotate("text", x = 1, y = median(teachers2022$TOTAL_GROSS), label = "Median", vjust = -1, color = "#F6423C", size = 2.5) + # adjust x and y accordingly
+  labs(title = "BPS Teacher Average Gross Earnings in 2022 Distribution by School Type",
+       x = "School",
+       y = "Dollars ($)",
+       fill = "Earning Type",
+       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+  theme_economist() +
+  scale_fill_economist() +
+  theme(axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)))
+
+bps2022_teach_box
+
+ggsave(filename = "bps2022_teach_box.png", plot = bps2022_teach_box, width = 13, height = 7, dpi = 600)
 
 
+
+#--------------Stacked bar by school type
+
+type_averages <- teachers2022 %>% 
+  group_by(SCHOOL_TYPE) %>% 
+  summarise('Base' = mean(REGULAR, na.rm = TRUE), 
+            'Retro' = mean(RETRO),
+            'Overtime' = mean(OVERTIME),
+            'Injured' = mean(INJURED),
+            'Other' = mean(OTHER),
+            mean_gross = mean(TOTAL_GROSS)
+  ) %>% 
+  arrange(mean_gross)
+
+#converting department column into a factor so the stacked bar plot arranges it by mean_gross instead of alphabetically
+type_averages$SCHOOL_TYPE <- factor(type_averages$SCHOOL_TYPE, levels = type_averages$SCHOOL_TYPE)
+
+#creating a long format for easier stacking of the pay categories
+type_averages_long <- type_averages %>% 
+  select(-mean_gross) %>% 
+  pivot_longer(cols = -SCHOOL_TYPE, names_to = "earnings_type", values_to = "average_amount")
+
+type_averages_long$earnings_type <- factor(type_averages_long$earnings_type, 
+                                      levels = c("Other", "Injured", "Retro", "Overtime", "Base")) #ordering stacks
+
+
+y_lim_max <- max(type_averages$mean_gross) * 1.1
+x_label_margin <- 10
+
+bps2022_type_bar <- type_averages_long %>% 
+  ggplot(aes(x = SCHOOL_TYPE, y = average_amount, fill = earnings_type)) +
+  geom_bar(stat = "identity", position = "stack") +
+  annotate("text", 
+           x = type_averages$SCHOOL_TYPE, 
+           y = type_averages$mean_gross, 
+           label = round(type_averages$mean_gross, 2), 
+           hjust = -0.45, size = 3.5, color = "black") +
+  coord_flip(ylim = c(0, y_lim_max)) +
+  labs(title = "BPS Average Gross Earnings in 2022 by School Type",
+       x = "School",
+       y = "Dollars ($)",
+       fill = "Earning Type",
+       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+  theme_economist(horizontal = FALSE) +
+  scale_fill_economist() +
+  scale_y_continuous(breaks = c(0, 50000, 100000),
+                     labels = c("0", "50,000", "100,000")) +   # This line adds specific breaks
+  guides(fill = guide_legend(reverse = TRUE)) + #reverses legend so the colors match the order of the colors of the bars
+  theme(axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)),
+        axis.text.y = element_text(margin = margin(t = 0, r = -30, b = 0, l = 0)))
+
+bps2022_type_bar
+
+ggsave(filename = "bps2022_type_bar.png", plot = bps2022_bar_plot, width = 13, height = 7, dpi = 600)
 
