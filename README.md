@@ -109,7 +109,11 @@ Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire
 
 ![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
 
-![](./BPS_earnings/bps2022_postal_map.png)<!-- -->
+![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
 
 
 
