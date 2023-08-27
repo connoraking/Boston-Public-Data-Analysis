@@ -95,9 +95,13 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 #### Interpretation
 
-
+- A significant number of teachers earn notably higher than the mean which pulls the median higher.
+- Since it is left-skewed, there appears to be more experienced teachers and there appears to be teachers earning significantly less which may indicate being newer.
+- BPS teachers earn significantly more than the average public school teacher salary of `$66,397`.
 
 ![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
+
+
 
 ![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
 
