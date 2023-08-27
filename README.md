@@ -23,32 +23,32 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 ### Data Breakdown
 
 #### Overall Earnings
-- The Boston Fire Department has the highest average gross earnings for 2022 at `$157,168.68`.
-- The Strategy Department has the lowest average gross earnings at `$64,350.30`.
+- The Boston Fire Department has the highest average gross earnings for 2022 at *$157,168.68*.
+- The Strategy Department has the lowest average gross earnings at *$64,350.30*.
 
 #### Base Salary
-- The Boston Fire Department has the highest average base salary of `$114,767.73`.
-- The Parks Department has the lowest average base salary of `$47,775.02`.
+- The Boston Fire Department has the highest average base salary of *$114,767.73*.
+- The Parks Department has the lowest average base salary of *$47,775.02*.
 
 #### Overtime
 
-- The Boston Police Department has the highest average overtime earnings at `$25,745.20`.
+- The Boston Police Department has the highest average overtime earnings at *$25,745.20*.
 - The Environment and Strategy Departments have virtually no overtime earnings.
 
 #### Injury Pay
 
-- Both Boston Police Department and Boston Fire Department have considerable injury pay, with the Fire Department leading at `$8,310.33`.
+- Both Boston Police Department and Boston Fire Department have considerable injury pay, with the Fire Department leading at *$8,310.33*.
 - Several departments, including the Auditing, Public Facilities, Environment, Strategy, and Law Departments, have no injury pay.
 
 #### Education Incentive
 
-- The Boston Police Department is primarily the only department to earn education incentive payments with an average of `$9,230.27`.
+- The Boston Police Department is primarily the only department to earn education incentive payments with an average of *$9,230.27*.
 - From [mass.edu](https://www.mass.edu/osfa/initiatives/pcipp.asp): "The Police Career Incentive Pay Program, also known as the Quinn Bill, was enacted by the Massachusetts Legislature to encourage police officers to earn degrees in law enforcement and criminal justice.  It provides educational incentives for regular full-time officers in participating cities and towns through salary increases."
 
 #### Other
 
-- The Strategy Department has the highest average other earnings at `$9,394.63`.
-- The Public Works Department has the least in this category at `$1,782.80`.
+- The Strategy Department has the highest average other earnings at *$9,394.63*.
+- The Public Works Department has the least in this category at *$1,782.80*.
 
 ### Throughout the Years
 
@@ -90,15 +90,15 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 #### Central Tendency
 
-- Mean (`$95,095.10`): The average earnings of the teachers.
-- Median (`106,015.23`): The earnings when all earnings are sorted in increaseing or decreasing order.
+- Mean (*$95,095.10*): The average earnings of the teachers.
+- Median (*106,015.23*): The earnings when all earnings are sorted in increaseing or decreasing order.
 - Skewness: We can clearly see that the distribution is *left skewed* and because the median is greater than the mean.
 
 #### Interpretation
 
 - A significant number of teachers earn notably higher than the mean which pulls the median higher.
 - Since it is left-skewed, there appears to be more experienced teachers and there appears to be teachers earning significantly less which may indicate being newer.
-- BPS teachers earn significantly more than the average public school teacher salary of `$66,397`.
+- BPS teachers earn significantly more than the average public school teacher salary of *$66,397*.
 
 ### Zipcode Map
 
@@ -106,8 +106,8 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 ### Data Breakdown
 
-- Zipcode `02134` (north west) has the lowest average total earnings of `$63,853.46`.
-- Zipcode `02467` (small western bits) has the highest average total earnings of `$102,780,80`.
+- Zipcode `02134` (north west) has the lowest average total earnings of *$63,853.46*.
+- Zipcode `02467` (small western bits) has the highest average total earnings of *$102,780,80*.
 
 ### Implications  
 
@@ -116,7 +116,7 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 ![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
 
-- McCormack Middle has a glaring anomaly of `Injured` pay. They pay an average `Injured` pay of `$36,035.48`. This is almost 33k more than the second highest Injured pay average. Upon analyzing the data, there doesn't seem to be any outliers skewing the average. Searching the internet didn't return anything explanatory either. I'm left to infer that something went wrong in data collection or some administrative pecularity. BPS should investigate this further. 
+- McCormack Middle has a glaring anomaly of `Injured` pay. They pay an average `Injured` pay of *$36,035.48*. This is almost 33k more than the second highest Injured pay average. Upon analyzing the data, there doesn't seem to be any outliers skewing the average. Searching the internet didn't return anything explanatory either. I'm left to infer that something went wrong in data collection or some administrative pecularity. BPS should investigate this further. 
 
 ![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
 
