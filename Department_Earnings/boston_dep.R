@@ -56,7 +56,7 @@ stacked_2022_plot <- averages_long %>%
       x = "Department",
       y = "Dollars ($)",
       fill = "Earning Type",
-      caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+      caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist(horizontal = FALSE) +
   scale_fill_economist() +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)))
@@ -227,7 +227,7 @@ line_plot <- ggplot(all_averages, aes(x = year, y = mean_gross, group = DEPARTME
        x = "Year",
        y = "Dollars ($)",
        color = "Department",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist() +
   scale_x_continuous(breaks = 2011:2022, limits = c(2011, 2022)) + 
   scale_y_continuous(breaks = c(50000, 100000, 150000)) +

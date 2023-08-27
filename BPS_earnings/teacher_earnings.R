@@ -94,7 +94,7 @@ bps2022_teach_bar <- teach_averages_long %>%
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist(horizontal = FALSE) +
   scale_fill_economist() +
   scale_y_continuous(breaks = c(0, 50000, 100000),
@@ -139,7 +139,48 @@ ggsave(filename = "bps2022_teach_hist.png", plot = bps2022_teach_hist, width = 1
 
 #-------- teacher map
 
+
+#cleaning incorrect postal codes
+
+teachers2022 %>% filter(POSTAL == 02199)
+
 teachers2022$POSTAL[teachers2022$POSTAL == '02199'] <- '02129'
+
+teachers2022 %>% filter(POSTAL == '02110')
+
+teachers2022$POSTAL[teachers2022$NAME == 'Pisani,Emiliabianca'] <- '02109'
+teachers2022$POSTAL[teachers2022$NAME == 'Garrity,Ross'] <- '02119'
+
+teachers2022 %>% filter(POSTAL == '02108')
+
+teachers2022$POSTAL[teachers2022$NAME == 'Godino,Matthew David'] <- '02128'
+teachers2022$POSTAL[teachers2022$NAME == 'Moguel,Elizabeth L.'] <- '02115'
+teachers2022$POSTAL[teachers2022$NAME == 'Campot,Sophia Gabrielle'] <- '02115'
+teachers2022$POSTAL[teachers2022$NAME == 'King,Jimmy Tyrone'] <- '02124'
+
+teachers2022 %>% filter(teachers2022$POSTAL == '02109')
+
+teachers2022$POSTAL[teachers2022$NAME == 'Myette,Silvana D'] <- '02115'
+teachers2022$POSTAL[teachers2022$NAME == 'MacGeorge,Ronald J.'] <- '02128'
+teachers2022$POSTAL[teachers2022$NAME == 'Von Der Luft,Christa'] <- '02120'
+teachers2022$POSTAL[teachers2022$NAME == 'Blake,Andrea J'] <- '02111'
+teachers2022$POSTAL[teachers2022$NAME == 'Negron,Mackenzie Emily'] <- '02116'
+
+teachers2022 %>% filter(teachers2022$POSTAL == '02111')
+
+teachers2022$POSTAL[teachers2022$NAME == 'Reines-Leo,Alicia Joy' | teachers2022$NAME == 'Hale,Nyerrie Leon'] <- '02116'
+teachers2022$POSTAL[teachers2022$NAME == 'Postma-Kiley,Olivia June'] <- '02132'
+teachers2022$POSTAL[teachers2022$NAME == 'Fogel,Nicholas'] <- '02115'
+
+teachers2022 %>% filter(teachers2022$POSTAL == '02210')
+
+teachers2022$POSTAL[teachers2022$NAME == 'Baroz,Robert J'] <- '02128'
+teachers2022$POSTAL[teachers2022$NAME == 'Hauben,Ari W.'] <- '02215'
+teachers2022$POSTAL[teachers2022$NAME == 'Allen,Nancy J'] <- '02116'
+teachers2022$POSTAL[teachers2022$NAME == 'Kelly,Mary'] <- '02118'
+teachers2022$POSTAL[teachers2022$NAME == 'Wright,Lindsey M'] <- '02130'
+teachers2022$POSTAL[teachers2022$NAME == 'Williams,Nicholas J'] <- '02121'
+teachers2022$POSTAL[teachers2022$NAME == 'Beatty,Lindsay Elizabeth'] <- '02125'
 
 #average earnings for each postal code
 postal_averages <- teachers2022 %>% 
@@ -156,7 +197,6 @@ postal_sf <- sf::st_read("ZIP_Codes.geojson") %>%
 
 postal_df <- na.omit(left_join(postal_sf, postal_averages, by = "POSTAL"))
 
-teachers2022 %>% filter(POSTAL == 02199)
 
 #average earnings for each postal code
 teach_postal_averages <- teachers2022 %>% 
@@ -166,20 +206,30 @@ teach_postal_averages <- teachers2022 %>%
   ) %>% 
   arrange(mean_gross)
 
-library(sf)
+View(
+  teachers2022 %>% 
+    filter(POSTAL == "02026")
+) #several zip codes seem to be wrong
+
 
 teach_postal_df <- na.omit(left_join(postal_sf, teach_postal_averages, by = "POSTAL"))
+
+#removing zip codes that don't seem to be in BPS
+teach_postal_df <- teach_postal_df[!(teach_postal_df$POSTAL == "02026" |
+                                    teach_postal_df$POSTAL == "02021" |
+                                    teach_postal_df$POSTAL == "02186" |
+                                    teach_postal_df$POSTAL == "02459"), ]
 
 
 postal_teach_choro <- ggplot() +
   geom_sf(data = teach_postal_df, aes(fill = mean_gross), color = "black") +
-  geom_sf_text(data = teach_postal_df, aes(label = paste(teach_postal_df$POSTAL)), size = 2, color = "gray") +
+  geom_sf_text(data = teach_postal_df, aes(label = paste(teach_postal_df$POSTAL)), size = 2, color = "white") +
   scale_fill_viridis_c(name = 'Average Gross Earnings ($)', option = 'viridis', 
                        guide = guide_colorbar(label.theme = element_text(size = 8), barwidth = unit(4, "inches")),
                        breaks = c(60000, 80000, 100000),
                        labels = c("60k", "80k", "100k")) +
   labs(title = "Average BPS Teacher Total Gross Earnings in 2022 by Zip Code",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist() +
   theme(axis.text = element_blank(),
         axis.title = element_blank(),
@@ -219,7 +269,7 @@ bps2022_teach_top_20 <- teach_top_20_averages_long %>%
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist(horizontal = FALSE) +
   scale_fill_economist() +
   scale_y_continuous(breaks = c(0, 50000, 100000),
@@ -261,7 +311,7 @@ bps2022_teach_bottom_20 <- teach_bottom_20_averages_long %>%
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist(horizontal = FALSE) +
   scale_fill_economist() +
   scale_y_continuous(breaks = c(0, 50000, 100000),
@@ -295,11 +345,11 @@ bps2022_teach_box <- teachers2022 %>%
   stat_summary(fun.y = mean, geom = "errorbar", aes(ymax = ..y.., ymin = ..y..), width = 0.2, linetype = "dashed", color = "#FB9851") +
   annotate("text", x = 1, y = mean(teachers2022$TOTAL_GROSS), label = "Mean", vjust = -0.5, color = "#FB9851", size = 2.5) + # adjust x and y accordingly
   annotate("text", x = 1, y = median(teachers2022$TOTAL_GROSS), label = "Median", vjust = -1, color = "#F6423C", size = 2.5) + # adjust x and y accordingly
-  labs(title = "BPS Teacher Average Gross Earnings in 2022 Distribution by School Type",
+  labs(title = "BPS Teacher Average Gross Earnings in 2022 Distribution by School Level",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist() +
   scale_fill_economist() +
   theme(axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0)))
@@ -347,11 +397,11 @@ bps2022_type_bar <- type_averages_long %>%
            label = round(type_averages$mean_gross, 2), 
            hjust = -0.45, size = 3.5, color = "black") +
   coord_flip(ylim = c(0, y_lim_max)) +
-  labs(title = "BPS Average Gross Earnings in 2022 by School Type",
+  labs(title = "BPS Average Gross Earnings in 2022 by School Level",
        x = "School",
        y = "Dollars ($)",
        fill = "Earning Type",
-       caption = paste("Source: data.boston.gov", "u/BostonConnor11", sep = "\n")) +
+       caption = paste("Source: data.boston.gov", "github.com/connoraking", sep = "\n")) +
   theme_economist(horizontal = FALSE) +
   scale_fill_economist() +
   scale_y_continuous(breaks = c(0, 50000, 100000),
