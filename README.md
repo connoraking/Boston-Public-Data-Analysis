@@ -12,7 +12,11 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Zipcode Map](#zipcode-map)
     - [Top 20 Schools](#top-20-schools)
     - [Bottom 20 Schools](#bottom-20-schools)
+    - [School Level Earnings](#school-level-earnings)
 3. [Fire Incidents](#fire-incidents)
+    - [Incidents Since 2014](#incidents-since-2014)
+    - [Incidents Map](#incidents-map)
+    - [Word Clouds](#word-clouds)
 
 ## Department Earnings
 
@@ -128,23 +132,65 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 - In-district charter schools seem to earn less.
 
+### All Schools
+
 ![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
 
-![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
+### School Level Earnings
+
+#### Stacked Bar Chart
 
 ![](./BPS_earnings/bps2022_type_bar.png)<!-- -->
 
+- The earnings between school levels seem to be rather close on average.
+- Elementary school teachers earn the most at an average of *$97,609.54*
+- Academy school teachers earn the least at an average of *$92,555.51*
+- Middle school teachers have a higher amount of `Injured` earnings *$431.52* which is almost 300 more than the second highest average.
+
+#### Violin Plot
+
+![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
+
+- Every distribution is skewed left.
+- Elementary schools seem to have the largest `mode` while middle schools seem to have the smallest `mode`. 
+
+
 ## Fire Incidents
 
-Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting)
+Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting).
+
+Since the Boston Fire Department has the [highest earnings](#2022), I decided to visualize and analyze fire incidents since 2014 within Boston. 
+
+### Incidents Since 2014
+
+#### Yearly
 
 ![](./Fire_incidents/incident_years.png)<!-- -->
 
-![](./Fire_incidents/incident_hours.png)<!-- -->
+- Incidents are at an all time high and growing at *54,663* incidents in 2022.
+- There was a dip in 2020 which can be explained by the COVID lockdowns.
+
+#### Monthly
 
 ![](./Fire_incidents/incident_months.png)<!-- -->
 
+- Fire incidents by months heavily correlates with average monthly precipitation. 
+
+#### Hourly
+
+![](./Fire_incidents/incident_hours.png)<!-- -->
+
+- Most fire incidents occured during the middle of the day.
+- 4:00am to 5:00am had the lowest count of 7,853 incidents
+- 11am to 12pm had the highest count of 28,230 incidents
+
+### Incidents Map
+
+*note: the incidents dataset had a neighborhood of just "Boston" and was missing some neighborhoods. Upon investigating the streets, it seems that this "Boston" neighborhood was an aggregate of the missing neighborhoods which I labeled "Inner Boston"*
+
 ![](./Fire_incidents/incident_choro.png)<!-- -->
+
+### Word Clouds
 
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
 
