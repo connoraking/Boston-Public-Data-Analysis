@@ -1,5 +1,5 @@
 # Boston Public Data Analysis
-Analyzing and creating data visualizations on public Boston Data from [data.boston.gov](https://data.boston.gov)
+Analyzing and creating data visualizations on public Boston Data from [data.boston.gov](https://data.boston.gov). This project serves to aid public resource allocation and infrastructure. The project primarily utilized `R` for statistical analysis and visualzation and involved using `SQL` to calculate various statistics.
 
 ## Table of Contents
 
