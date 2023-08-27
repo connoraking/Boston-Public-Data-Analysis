@@ -22,32 +22,32 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 ### _Data breakdown_
 
 #### Overall Earnings
-- The Boston Fire Department has the highest average gross earnings for 2022 at $157,168.68.
-- The Strategy Department has the lowest average gross earnings at $64,350.30.
+- The Boston Fire Department has the highest average gross earnings for 2022 at `$157,168.68`.
+- The Strategy Department has the lowest average gross earnings at `$64,350.30`.
 
 #### Base Salary
-- The Boston Fire Department has the highest average base salary of $114,767.73.
-- The Parks Department has the lowest average base salary of $47,775.02.
+- The Boston Fire Department has the highest average base salary of `$114,767.73`.
+- The Parks Department has the lowest average base salary of `$47,775.02`.
 
 #### Overtime
 
-- The Boston Police Department has the highest average overtime earnings at $25,745.20.
+- The Boston Police Department has the highest average overtime earnings at `$25,745.20`.
 - The Environment and Strategy Departments have virtually no overtime earnings.
 
 #### Injury Pay
 
-- Both Boston Police Department and Boston Fire Department have considerable injury pay, with the Fire Department leading at $8,310.33.
+- Both Boston Police Department and Boston Fire Department have considerable injury pay, with the Fire Department leading at `$8,310.33`.
 - Several departments, including the Auditing, Public Facilities, Environment, Strategy, and Law Departments, have no injury pay.
 
 #### Education Incentive
 
-- The Boston Police Department is primarily the only department to earn education incentive payments with an average of $9,230.27.
+- The Boston Police Department is primarily the only department to earn education incentive payments with an average of `$9,230.27`.
 - From [mass.edu](https://www.mass.edu/osfa/initiatives/pcipp.asp): "The Police Career Incentive Pay Program, also known as the Quinn Bill, was enacted by the Massachusetts Legislature to encourage police officers to earn degrees in law enforcement and criminal justice.  It provides educational incentives for regular full-time officers in participating cities and towns through salary increases."
 
 #### Other
 
-- The Strategy Department has the highest average other earnings at $9,394.63.
-- The Public Works Department has the least in this category at $1,782.80.
+- The Strategy Department has the highest average other earnings at `$9,394.63`.
+- The Public Works Department has the least in this category at `$1,782.80`.
 
 ### Throughout the Years
 
@@ -79,7 +79,9 @@ In summary, resource allocation should consider the unique needs and trends of e
 
 ## Boston Public Schools Earnings
 
-Since the Boston Public Schools Department (BPS) has a much more electic range of types of careers with different corresponding salaries, I decided to analyze them separately and focus on teacher earnings. The earning types were the same as the department earnings types (Base, Overtime, Retro, Injured, Other)
+Since the Boston Public Schools Department (BPS) has a much more electic range of types of careers with different corresponding salaries, I decided to analyze them separately and focus on teacher earnings. The earning types were the same as the department earnings types (Base, Overtime, Retro, Injured, Other).
+
+BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to on year of teacher experience. Lanes represent educational attainment. For example, there are separate lanes for teachers with bachelor's degrees compared to those with master's degrees. 
 
 ### Teacher Earning Distribution
 
@@ -88,8 +90,12 @@ Since the Boston Public Schools Department (BPS) has a much more electic range o
 #### Central Tendency
 
 - Mean (`$95,095.10`): The average earnings of the teachers.
-- Median (`106,015.23): The earnings when all earnings are sorted in increaseing or decreasing order.
+- Median (`106,015.23`): The earnings when all earnings are sorted in increaseing or decreasing order.
 - Skewness: We can clearly see that the distribution is *left skewed* and because the median is greater than the mean.
+
+#### Interpretation
+
+
 
 ![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
 
