@@ -12,6 +12,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Zipcode Map](#zipcode-map)
     - [Top 20 Schools](#top-20-schools)
     - [Bottom 20 Schools](#bottom-20-schools)
+    - [School Level Earnings](#school-level-earnings)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
@@ -128,7 +129,11 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 - In-district charter schools seem to earn less.
 
+### All Schools
+
 ![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
+
+### School Level Earnings
 
 ![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
 
