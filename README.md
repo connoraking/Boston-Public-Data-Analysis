@@ -154,7 +154,9 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 ## Fire Incidents
 
-Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting)
+Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting).
+
+Since the Boston Fire Department has the [highest earnings](#2022), I decided to visualize and analyze fire incidents within Boston. 
 
 ![](./Fire_incidents/incident_years.png)<!-- -->
 
