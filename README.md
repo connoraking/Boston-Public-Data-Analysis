@@ -6,19 +6,19 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 1. [Department Earnings](#department-earnings)
     - [2022](#2022)
     - [Throughout the Years](#throughout-the-years)
-    - [Analytical Insights](#analytical-insights)
+    - [Department Analytical Insights](#department-analytical-insights)
 2. [Boston Public Schools Earnings](#boston-public-schools-Earnings)
     - [Teacher Earning Distribution](#teacher-earning-distribution)
     - [Zipcode Map](#zipcode-map)
     - [Top 20 Schools](#top-20-schools)
     - [Bottom 20 Schools](#bottom-20-schools)
     - [School Level Earnings](#school-level-earnings)
-    - [Analytical Insights](#analytical-insights)
+    - [BPS Analytical Insights](#bps-analytical-insights)
 3. [Fire Incidents](#fire-incidents)
     - [Incidents Since 2014](#incidents-since-2014)
     - [Incidents Map](#incidents-map)
     - [Word Clouds](#word-clouds)
-    - [Analytical Insights](#analytical-insights)
+    - [Fire Related Analytical Insights](#fire-related-analytical-insights)
 
 ## Department Earnings
 
@@ -70,7 +70,7 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 - **Steady Growth:** Almost all departments have seen growth in their average gross earnings over the 12-year period. This could be due to annual raises, inflation adjustments, or an increased focus on specialized roles and responsibilities.
 - **Fluctuations:** Some departments like the Environment Department and Parks Department have seen fluctuations in their earnings, indicating possible changes in department size, roles, or budget allocations.
 
-### Analytical Insights
+### Department Analytical Insights
 
 #### Yearly Growth Rate
 - The Boston Fire Department saw a significant increase in average total gross earnings from 2018 to 2019. Such a spike may suggest back pay or adjustments due to a contract settlement. Knowing this, if a department is in prolonged negotiations, it might be prudent to budget for potential retroactive payments.
@@ -156,7 +156,7 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 - Every distribution is skewed left.
 - Elementary schools seem to have the largest `mode` while middle schools seem to have the smallest `mode`. 
 
-### Analytical Insights 
+### BPS Analytical Insights 
 
 1. Geographical Disparities
   The earnings distribution across zip codes can help BPS understand where more experienced teachers are located. This could be used for strategic recruitment, especially if BPS wants to balance out the experience distribution. Furthermore, understanding why certain zip codes have higher average earnings can offer insights into possible location-based incentives or benefits.  
@@ -220,7 +220,7 @@ These maps showcase the amount of fire incidents in 2014 in each neighborhood. T
 - The most frequent property were **Multifamily dwellings** with an average total loss of *$2,093.85*
 - The highest average total loss were **Casinos** at *$50,000*
 
-### Analytical Insights
+### Fire Related Analytical Insights
 
 1. Increasing Trend of Fire Incidents
     - The data shows an upward trend in fire incidents, reaching an all-time high in 2022. Despite the Boston Fire Department having the highest average earnings, the surge in incidents suggests a mounting pressure on the department's resources and personnel. Efficient resource allocation, strategic station placements, and preventive measures are crucial.
