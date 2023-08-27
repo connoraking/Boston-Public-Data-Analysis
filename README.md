@@ -77,6 +77,22 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 
 In summary, resource allocation should consider the unique needs and trends of each department. The data suggests potential areas of focus, including addressing high overtime costs, ensuring all departments have the resources they need, and optimizing incentive programs to ensure they're achieving desired outcomes. Properly analyzing these trends and acting on the insights can lead to more efficient use of city resources.
 
+## Boston Public Schools
+
+![](./BPS_earnings/bps2022_teach_hist.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
+
+![](./BPS_earnings/bps2022_type_bar.png)<!-- -->
+
 ## Fire Incidents
 
 Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting)
@@ -93,33 +109,6 @@ Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire
 
 ![](./Fire_incidents/incident_prop_word_cloud.png)<!-- -->
 
-## Boston Public Schools
-
-![](./BPS_earnings/bps2022_hist.png)<!-- -->
-
-![](./BPS_earnings/bps2022_top_20.png)<!-- -->
-
-![](./BPS_earnings/bps2022_bottom_20.png)<!-- -->
-
-![](./BPS_earnings/bps2022_bar_plot.png)<!-- -->
-
-![](./BPS_earnings/bps2022_postal_map.png)<!-- -->
-
-## Boston Public Schools Teachers
-
-![](./BPS_earnings/bps2022_teach_hist.png)<!-- -->
-
-![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
-
-![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
-
-![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
-
-![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
-
-![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
-
-![](./BPS_earnings/bps2022_type_bar.png)<!-- -->
 
 
 
