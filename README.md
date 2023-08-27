@@ -8,6 +8,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Throughout the Years](#throughout-the-years)
     - [Analytical Insights](#analytical-insights)
 2. [Boston Public Schools Earnings](#boston-public-schools-Earnings)
+    - [Teacher Earning Distribution](#teacher-earning-distribution)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
@@ -78,15 +79,25 @@ In summary, resource allocation should consider the unique needs and trends of e
 
 ## Boston Public Schools Earnings
 
+Since the Boston Public Schools Department (BPS) has a much more electic range of types of careers with different corresponding salaries, I decided to analyze them separately and focus on teacher earnings. The earning types were the same as the department earnings types (Base, Overtime, Retro, Injured, Other)
+
+### Teacher Earning Distribution
+
 ![](./BPS_earnings/bps2022_teach_hist.png)<!-- -->
 
-![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
+#### Central Tendency
+
+- Mean (`$95,095.10`): The average earnings of the teachers.
+- Median (`106,015.23): The earnings when all earnings are sorted in increaseing or decreasing order.
+- Skewness: We can clearly see that the distribution is *left skewed* and because the median is greater than the mean.
 
 ![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
 
 ![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
 
 ![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
+
+![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
 
 ![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
 
