@@ -135,14 +135,22 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 ### School Level Earnings
 
-![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
+#### Stacked Bar Chart
+
+![](./BPS_earnings/bps2022_type_bar.png)<!-- -->
 
 - The earnings between school levels seem to be rather close on average.
 - Elementary school teachers earn the most at an average of *$97,609.54*
 - Academy school teachers earn the least at an average of *$92,555.51*
 - Middle school teachers have a higher amount of `Injured` earnings *$431.52* which is almost 300 more than the second highest average.
 
-![](./BPS_earnings/bps2022_type_bar.png)<!-- -->
+#### Violin Plot
+
+![](./BPS_earnings/bps2022_teach_box.png)<!-- -->
+
+- Every distribution is skewed left.
+- Elementary schools seem to have the largest `mode` while middle schools seem to have the smallest `mode`. 
+
 
 ## Fire Incidents
 
