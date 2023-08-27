@@ -192,13 +192,21 @@ Since the Boston Fire Department has the [highest earnings](#2022), I decided to
 
 ![](./Fire_incidents/incident_choro_station.png)<!-- -->
 
-
+These maps showcase the amount of fire incidents in 2014 in each neighborhood. These maps can help urban development of new fire stations. It appears that Roxbury could benefit from additional fire stations.
 
 ### Word Clouds
 
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
 
+- This word cloud helps visualize fire incident by description and their corresponding monetary loss (damage) suffered.
+- *Public service* was the most frequent incident at a count of 77,860.
+- The highest total monetary loss average were **Water vehicle fire** at *$128,276* and **Building fire** at *$106,104*
+- There were 465,639 incidents since 2014 but only 13,028 incurred any monetary loss which means 97.2% of incidents didn't have any monetary damage.
+
 ![](./Fire_incidents/incident_prop_word_cloud.png)<!-- -->
+
+- This word cloud helps visualize fire incidents by property description and their corresponding monteary loss suffered.
+- The most frequent property were **Multifamily dwellings** with an average total loss of *$2,093.85*
 
 
 
