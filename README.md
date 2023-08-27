@@ -9,6 +9,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Analytical Insights](#analytical-insights)
 2. [Boston Public Schools Earnings](#boston-public-schools-Earnings)
     - [Teacher Earning Distribution](#teacher-earning-distribution)
+    - [Zipcode Map](#zipcode-map)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
@@ -19,7 +20,7 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 
 ![](./Department_Earnings/stacked_2022_earnings.png)<!-- -->
 
-### _Data breakdown_
+### Data Breakdown
 
 #### Overall Earnings
 - The Boston Fire Department has the highest average gross earnings for 2022 at `$157,168.68`.
@@ -99,9 +100,19 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 - Since it is left-skewed, there appears to be more experienced teachers and there appears to be teachers earning significantly less which may indicate being newer.
 - BPS teachers earn significantly more than the average public school teacher salary of `$66,397`.
 
+### Zipcode Map
+
 ![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
 
+### Data Breakdown
 
+- Zipcode `02134` (north west) has the lowest average total earnings of `$63,853.46`.
+- Zipcode `02467` (small western bits) has the highest average total earnings of `$102,780,80`
+
+### Implications  
+
+- This map serves as a proxy for the average number of years teaching for each zip code because of the step-and-lane salary system.
+- The BPS could utilize this map to distribute the experience level of teachers more evenly. The southern zip codes seem to have more experienced teachers with higher earnings.  
 
 ![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
 
