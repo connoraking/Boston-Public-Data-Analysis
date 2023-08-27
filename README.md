@@ -167,17 +167,26 @@ Since the Boston Fire Department has the [highest earnings](#2022), I decided to
 
 ![](./Fire_incidents/incident_years.png)<!-- -->
 
+- Incidents are at an all time high and growing at *54,663* incidents in 2022.
+- There was a dip in 2020 which can be explained by the COVID lockdowns.
+
 #### Monthly
 
 ![](./Fire_incidents/incident_months.png)<!-- -->
 
-![](./Fire_incidents/incident_hours.png)<!-- -->
+- Fire incidents by months heavily correlates with average monthly precipitation. 
 
 #### Hourly
 
 ![](./Fire_incidents/incident_hours.png)<!-- -->
 
+- Most fire incidents occured during the middle of the day.
+- 4:00am to 5:00am had the lowest count of 7,853 incidents
+- 11am to 12pm had the highest count of 28,230 incidents
+
 ### Incidents Map
+
+*note: the incidents dataset had a neighborhood of just "Boston" and was missing some neighborhoods. Upon investigating the streets, it seems that this "Boston" neighborhood was an aggregate of the missing neighborhoods which I labeled "Inner Boston"*
 
 ![](./Fire_incidents/incident_choro.png)<!-- -->
 
