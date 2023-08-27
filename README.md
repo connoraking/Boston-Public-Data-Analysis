@@ -207,6 +207,7 @@ These maps showcase the amount of fire incidents in 2014 in each neighborhood. T
 
 - This word cloud helps visualize fire incidents by property description and their corresponding monteary loss suffered.
 - The most frequent property were **Multifamily dwellings** with an average total loss of *$2,093.85*
+- The highest average total loss were **Casinos** at *$50,000*
 
 
 
