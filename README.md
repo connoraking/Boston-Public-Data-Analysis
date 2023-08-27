@@ -14,6 +14,9 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Bottom 20 Schools](#bottom-20-schools)
     - [School Level Earnings](#school-level-earnings)
 3. [Fire Incidents](#fire-incidents)
+    - [Incidents Since 2014](#incidents-since-2014)
+    - [Incidents Map](#incidents-map)
+    - [Word Clouds)(#word-clouds)
 
 ## Department Earnings
 
@@ -156,15 +159,29 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 Using the dataset from these [fire reports](https://data.boston.gov/dataset/fire-incident-reporting).
 
-Since the Boston Fire Department has the [highest earnings](#2022), I decided to visualize and analyze fire incidents within Boston. 
+Since the Boston Fire Department has the [highest earnings](#2022), I decided to visualize and analyze fire incidents since 2014 within Boston. 
+
+### Incidents Since 2014
+
+#### Yearly
 
 ![](./Fire_incidents/incident_years.png)<!-- -->
 
-![](./Fire_incidents/incident_hours.png)<!-- -->
+#### Monthly
 
 ![](./Fire_incidents/incident_months.png)<!-- -->
 
+![](./Fire_incidents/incident_hours.png)<!-- -->
+
+#### Hourly
+
+![](./Fire_incidents/incident_hours.png)<!-- -->
+
+### Incidents Map
+
 ![](./Fire_incidents/incident_choro.png)<!-- -->
+
+### Word Clouds
 
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
 
