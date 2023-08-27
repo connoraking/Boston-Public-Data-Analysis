@@ -190,6 +190,10 @@ Since the Boston Fire Department has the [highest earnings](#2022), I decided to
 
 ![](./Fire_incidents/incident_choro.png)<!-- -->
 
+![](./Fire_incidents/incident_choro_station.png)<!-- -->
+
+
+
 ### Word Clouds
 
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
