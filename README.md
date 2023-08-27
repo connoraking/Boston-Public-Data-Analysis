@@ -7,9 +7,8 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [2022](#2022)
     - [Throughout the Years](#throughout-the-years)
     - [Analytical Insights](#analytical-insights)
-2. [Fire Incidents](#fire-incidents)
-3. [Boston Public Schools](#boston-public-schools)
-4. [Boston Public Schools Teachers](#boston-public-schools-teachers) 
+2. [Boston Public Schools Earnings](#boston-public-schools-Earnings)
+3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
 
@@ -77,7 +76,7 @@ Using datasets from these [earning reports](https://data.boston.gov/dataset/empl
 
 In summary, resource allocation should consider the unique needs and trends of each department. The data suggests potential areas of focus, including addressing high overtime costs, ensuring all departments have the resources they need, and optimizing incentive programs to ensure they're achieving desired outcomes. Properly analyzing these trends and acting on the insights can lead to more efficient use of city resources.
 
-## Boston Public Schools
+## Boston Public Schools Earnings
 
 ![](./BPS_earnings/bps2022_teach_hist.png)<!-- -->
 
