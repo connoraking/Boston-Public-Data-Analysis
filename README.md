@@ -13,10 +13,12 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
     - [Top 20 Schools](#top-20-schools)
     - [Bottom 20 Schools](#bottom-20-schools)
     - [School Level Earnings](#school-level-earnings)
+    - [Analytical Insights](#analytical-insights)
 3. [Fire Incidents](#fire-incidents)
     - [Incidents Since 2014](#incidents-since-2014)
     - [Incidents Map](#incidents-map)
     - [Word Clouds](#word-clouds)
+    - [Analytical Insights](#analytical-insights)
 
 ## Department Earnings
 
@@ -86,7 +88,7 @@ In summary, resource allocation should consider the unique needs and trends of e
 
 ## Boston Public Schools Earnings
 
-Since the Boston Public Schools Department (BPS) has a much more electic range of types of careers with different corresponding salaries, I decided to analyze them separately and focus on teacher earnings. The earning types were the same as the department earnings types (Base, Overtime, Retro, Injured, Other).
+Since the Boston Public Schools Department (BPS) has a much more electic range of types of careers with different corresponding salaries, I decided to analyze them separately and focus on teacher earnings. The earning types were the same as the department earnings types (Base, Overtime, Retro, Injured, Other). The data was messy and required a lot of wrangling and correcting. 
 
 BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to on year of teacher experience. Lanes represent educational attainment. For example, there are separate lanes for teachers with bachelor's degrees compared to those with master's degrees. 
 
@@ -154,6 +156,15 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 - Every distribution is skewed left.
 - Elementary schools seem to have the largest `mode` while middle schools seem to have the smallest `mode`. 
 
+### Analytical Insights 
+
+1. Geographical Disparities
+  The earnings distribution across zip codes can help BPS understand where more experienced teachers are located. This could be used for strategic recruitment, especially if BPS wants to balance out the experience distribution. Furthermore, understanding why certain zip codes have higher average earnings can offer insights into possible location-based incentives or benefits.  
+2. Data Collection 
+    - The unusual `Injured` pay at McCormack Middle is concerning and suggests either a data issue or perhaps an operational challenge. It's essential for BPS to understand the reason behind this anomaly to ensure that resources are being allocated appropriately and to avoid potential reputational risks.
+    - The data needed thorough cleaning as many zip codes were wrong and schools that had been shut down were included. A possible culprit could be a teacher transitioning to a different school.
+3. Earnings Across Levels
+   - While the earnings between school levels are relatively close, the nuances such as the higher `Injured` earnings for middle school teachers can be crucial for resource planning. It might be worthwhile for BPS to probe deeper into the reasons behind this pattern. Is there something about the middle school environment or curriculum that makes injuries more frequent?
 
 ## Fire Incidents
 
@@ -199,7 +210,7 @@ These maps showcase the amount of fire incidents in 2014 in each neighborhood. T
 ![](./Fire_incidents/incident_word_cloud.png)<!-- -->
 
 - This word cloud helps visualize fire incident by description and their corresponding monetary loss (damage) suffered.
-- *Public service* was the most frequent incident at a count of 77,860.
+- *Public service* was the most frequent incident at a count of 77,860 and an average loss of only 30 cents.
 - The highest total monetary loss average were **Water vehicle fire** at *$128,276* and **Building fire** at *$106,104*
 - There were 465,639 incidents since 2014 but only 13,028 incurred any monetary loss which means 97.2% of incidents didn't have any monetary damage.
 
@@ -209,6 +220,23 @@ These maps showcase the amount of fire incidents in 2014 in each neighborhood. T
 - The most frequent property were **Multifamily dwellings** with an average total loss of *$2,093.85*
 - The highest average total loss were **Casinos** at *$50,000*
 
+### Analytical Insights
+
+1. Increasing Trend of Fire Incidents
+    - The data shows an upward trend in fire incidents, reaching an all-time high in 2022. Despite the Boston Fire Department having the highest average earnings, the surge in incidents suggests a mounting pressure on the department's resources and personnel. Efficient resource allocation, strategic station placements, and preventive measures are crucial.
+2. Influence of External Factors
+    - The dip in incidents during 2020, presumably due to the COVID lockdowns, emphasizes the role external societal factors play in incident frequencies.
+    - Similarly, the correlation of incidents with monthly precipitation might be indicative of the various challenges faced by the department throughout the year.
+3. Time-based patterns
+    - The trend of most incidents occurring during mid-day could be attributed to heightened human activity during these hours, possibly leading to more accident-prone situations. Conversely, the low incidents during the early morning might be due to reduced activity.
+4. Geographical Discrepancies
+    - The "Inner Boston" categorization emphasizes the importance of meticulous data analysis to gain accurate insights. Using such approaches can uncover hidden patterns or information gaps. The notable number of incidents in Roxbury reinforces the idea that certain neighborhoods may be in urgent need of additional fire station resources.
+5. Incident Descriptions and Monetary Impact
+    - While **Public service** incidents are frequent, they result in minimal monetary damage, highlighting that not all incidents strain financial resources. However, specific incidents like **Water vehicle fire** and **Building fire** lead to considerable monetary losses, indicating areas where preventive measures can lead to significant cost savings.
+6. Property-based Incident Insights
+    - The high frequency of incidents in **Multifamily dwellings** underscores the need for fire safety awareness and measures in residential complexes. While properties like **Casinos** had the highest average total loss, their overall frequency might be low, leading to a skewed perception of risk. It's essential to consider both frequency and monetary impact to prioritize fire safety initiatives.
+7. Relevance to Boston Fire Department Earnings
+    - The department's high earnings could be justified by sheer volume and variety of incidents they deal with. However, the emphasis should be on ensuring that these resources are translated into effective firefighting stratetgies and allocation. For instance a firetruck would not be needed at most **Public Service** incidents since they only have a total average loss of 30 cents. 
 
 
 
