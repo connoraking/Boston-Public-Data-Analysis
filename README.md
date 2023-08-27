@@ -10,6 +10,8 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 2. [Boston Public Schools Earnings](#boston-public-schools-Earnings)
     - [Teacher Earning Distribution](#teacher-earning-distribution)
     - [Zipcode Map](#zipcode-map)
+    - [Top 20 Schools](#top-20-schools)
+    - [Bottom 20 Schools](#bottom-20-schools)
 3. [Fire Incidents](#fire-incidents)
 
 ## Department Earnings
@@ -104,21 +106,27 @@ BPS use a step-and-lane salary schedule for teachers. Each *step* corresponds to
 
 ![](./BPS_earnings/bps2022_teach_postal_map.png)<!-- -->
 
-### Data Breakdown
+#### Data Breakdown
 
 - Zipcode `02134` (north west) has the lowest average total earnings of *$63,853.46*.
 - Zipcode `02467` (small western bits) has the highest average total earnings of *$102,780,80*.
 
-### Implications  
+#### Implications  
 
 - This map serves as a proxy for the average number of years teaching for each zip code because of the step-and-lane salary system.
 - The BPS could utilize this map to distribute the experience level of teachers more evenly. The southern zip codes seem to have more experienced teachers with higher earnings.  
+
+### Top 20 Schools
 
 ![](./BPS_earnings/bps2022_teach_top_20.png)<!-- -->
 
 - McCormack Middle has a glaring anomaly of `Injured` pay. They pay an average `Injured` pay of *$36,035.48*. This is almost 33k more than the second highest Injured pay average. Upon analyzing the data, there doesn't seem to be any outliers skewing the average. Searching the internet didn't return anything explanatory either. I'm left to infer that something went wrong in data collection or some administrative pecularity. BPS should investigate this further. 
 
+### Bottom 20 Schools
+
 ![](./BPS_earnings/bps2022_teach_bottom_20.png)<!-- -->
+
+- In-district charter schools seem to earn less.
 
 ![](./BPS_earnings/bps2022_teach_bar.png)<!-- -->
 
