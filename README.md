@@ -16,7 +16,7 @@ Analyzing and creating data visualizations on public Boston Data from [data.bost
 3. [Fire Incidents](#fire-incidents)
     - [Incidents Since 2014](#incidents-since-2014)
     - [Incidents Map](#incidents-map)
-    - [Word Clouds)(#word-clouds)
+    - [Word Clouds](#word-clouds)
 
 ## Department Earnings
 
